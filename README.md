@@ -138,4 +138,45 @@ WaterJug(Jug1Capacity, Jug2Capacity, Target)
       Pour Jug1 → Jug2
       Pour Jug2 → Jug1
 ```
+---
 
+# 5. A* Search Algorithm
+
+## Problem
+Find the optimal path from a start node to a goal node using A* Search.
+
+## Pseudocode
+
+```
+AStar(Graph, Heuristic, Start, Goal)
+
+1. Create a list called open_list
+2. Insert (Start, cost = 0)
+
+3. Create empty visited list
+
+4. While open_list is not empty:
+
+      Select node with minimum f(n)
+
+      Remove it from open_list
+
+      If node already visited:
+            Continue
+
+      Print node
+      Add node to visited
+
+      If node equals Goal:
+            Print "Goal reached"
+            Stop
+
+      For each neighbour:
+
+            g = cost + edge_weight
+            h = heuristic(neighbour)
+
+            f = g + h
+
+            Add (neighbour, f) to open_list
+```
