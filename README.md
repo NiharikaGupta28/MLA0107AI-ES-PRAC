@@ -360,3 +360,44 @@ MiniMax(depth, nodeIndex, isMaximizingPlayer, values)
             MiniMax(depth + 1, nodeIndex*2, True, values)
             MiniMax(depth + 1, nodeIndex*2 + 1, True, values)
 ```
+---
+
+# 9. Greedy Best First Search (GBFS)
+
+## Problem
+Find a path from a start node to a goal node using the Greedy Best First Search strategy, which expands the node with the lowest heuristic value.
+
+## Pseudocode
+
+```
+GBFS(Graph, Heuristic, Start, Goal)
+
+1. Create an open_list containing:
+       (node, path, heuristic_value)
+
+2. Insert (Start, [Start], h(Start)) into open_list
+
+3. Create an empty visited list
+
+4. While open_list is not empty:
+
+       Select node with smallest heuristic value
+
+       Remove that node from open_list
+
+       If node == Goal:
+             Print path
+             Print cost
+             Stop
+
+       Add node to visited
+
+       For each neighbour of node:
+
+             If neighbour not in visited:
+
+                   Add (neighbour,
+                        updated_path,
+                        heuristic_cost)
+                   to open_list
+```
