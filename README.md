@@ -401,3 +401,30 @@ GBFS(Graph, Heuristic, Start, Goal)
                         heuristic_cost)
                    to open_list
 ```
+---
+
+# 10. Neural Network (Backpropagation)
+
+## Pseudocode
+
+```
+Backpropagation(Network, Input, Target)
+
+1. Perform Forward Pass
+       Calculate output of hidden layer
+       Apply sigmoid activation
+       Calculate output of output layer
+
+2. Compute Error
+       Error = Target − Output
+
+3. Backward Pass
+       Calculate delta for output layer
+       Calculate delta for hidden layer
+
+4. Update Weights
+       weight = weight + learning_rate * delta * input
+
+5. Perform another Forward Pass
+       Compute new output using updated weights
+```
