@@ -385,3 +385,196 @@ Backpropagation(Network, Input, Target)
 5. Perform another Forward Pass
        Compute new output using updated weights
 ```
+---
+
+# Prolog Programs (Pseudocode)
+
+---
+
+## 11. Sum of Integers from 1 to N
+
+```
+SUM(N, S)
+
+1. If N == 0:
+       S = 0
+
+2. Else:
+       S = SUM(N-1) + N
+```
+
+---
+
+## 12. Database (Name & DOB)
+
+```
+Store facts as:
+       person(name, date(day, month, year))
+
+Query:
+       Retrieve name and date of birth
+```
+
+---
+
+## 13. Student–Teacher–Subject
+
+```
+1. Store teacher and subject
+2. Store student and subject
+
+3. Rule:
+       Teacher teaches Student
+       if both have same subject
+```
+
+---
+
+## 14. Planets Database
+
+```
+1. Store planet names as facts
+
+2. Query:
+       Retrieve all planets
+```
+
+---
+
+## 15. Tower of Hanoi
+
+```
+HANOI(N, Source, Destination, Auxiliary)
+
+1. If N == 1:
+       Move disk from Source to Destination
+
+2. Else:
+       Move N-1 disks from Source to Auxiliary
+       Move disk from Source to Destination
+       Move N-1 disks from Auxiliary to Destination
+```
+
+---
+
+## 16. Bird Fly / Not Fly
+
+```
+1. Define birds
+
+2. Rule:
+       Bird can fly if it is not penguin
+```
+
+---
+
+## 17. Family Tree
+
+```
+1. Define parent, male, female
+
+2. Rules:
+       mother → parent + female
+       father → parent + male
+       grandfather → parent of parent + male
+       grandmother → parent of parent + female
+       sister/brother → same parent + gender
+```
+
+---
+
+## 18. Medical / Diet System
+
+```
+1. Define symptoms
+
+2. Define disease rules:
+       disease occurs if required symptoms exist
+```
+
+---
+
+## 19. Monkey Banana Problem
+
+```
+1. Define initial state
+
+2. Actions:
+       move → monkey changes position
+       push → box moves
+       climb → monkey climbs box
+       grasp → monkey gets banana
+
+3. Goal:
+       Monkey has banana
+```
+
+---
+
+## 20. Fruit Color (Backtracking)
+
+```
+1. Store fruit and color pairs
+
+2. Query:
+       Find fruit or color
+
+3. Backtracking:
+       System explores all possible matches
+```
+
+---
+
+## 21. Best First Search
+
+```
+1. Start from initial node
+
+2. Expand neighbours
+
+3. Avoid revisiting nodes
+
+4. Continue until goal is reached
+```
+
+---
+
+## 22. Medical Diagnosis
+
+```
+1. Define symptoms
+
+2. Define disease rules based on symptoms
+
+3. If symptoms match:
+       Disease is identified
+```
+
+---
+
+## 23. Forward Chaining
+
+```
+1. Start with known facts
+
+2. Apply rules
+
+3. Derive new facts
+
+4. Continue until goal is reached
+```
+
+---
+
+## 24. Backward Chaining
+
+```
+1. Start with goal
+
+2. Check rules that produce goal
+
+3. Verify required facts
+
+4. If facts are true:
+       Goal is satisfied
+```
